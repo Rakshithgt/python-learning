@@ -1,5 +1,6 @@
 employee_1 = ("Rakshith", {"Python", "SQL", "GenAI", "Git", "Docker"})
 employee_2 = ("Arun", {"Java", "SQL", "Git", "AWS", "Docker"})
+required_skills = {"Python", "SQL", "Git", "Docker", "Gen ai", "RAG", "FAstAPI"}
 
 name_1, skills_1 = employee_1
 name_2, skills_2 = employee_2
@@ -14,3 +15,4 @@ print(f"Only Rakshith: {skills_1 - skills_2}")
 print(f"Only Arun: {skills_2 - skills_1}")
 print(f"All Skills: {skills_1 | skills_2}")
 print(f"Skills possessed by exactly one employee: {skills_1 ^ skills_2}")
+print(f"missing_skills: {required_skills - skills_1}")
